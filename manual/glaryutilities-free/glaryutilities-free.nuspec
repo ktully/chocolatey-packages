@@ -8,7 +8,7 @@
     <projectUrl>http://www.glarysoft.com/glary-utilities/</projectUrl>
     <owners>Davide Ciarmiello, Kieran Tully</owners>
     <!-- TODO: move to manual package -->
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/ktully/chocolatey-packages/tree/master/manual/glaryutilities-free</packageSourceUrl>
     <licenseUrl>https://www.glarysoft.com/inf/eula/</licenseUrl>
     <iconUrl>http://www.glarysoft.com/images/update/updatelogo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
