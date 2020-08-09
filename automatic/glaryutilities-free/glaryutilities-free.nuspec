@@ -7,8 +7,7 @@
     <authors>Glarysoft Ltd</authors>
     <projectUrl>http://www.glarysoft.com/glary-utilities/</projectUrl>
     <owners>Davide Ciarmiello, Kieran Tully</owners>
-    <!-- TODO: move to manual package -->
-    <packageSourceUrl>https://github.com/ktully/chocolatey-packages/tree/master/manual/glaryutilities-free</packageSourceUrl>
+    <packageSourceUrl>https://github.com/ktully/chocolatey-packages/tree/master/automatic/glaryutilities-free</packageSourceUrl>
     <licenseUrl>https://www.glarysoft.com/inf/eula/</licenseUrl>
     <iconUrl>http://www.glarysoft.com/images/update/updatelogo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -21,9 +20,9 @@ Protect your privacy and security.
 Block spyware, trojans, adware, etc.
 Fix certain application errors.
 Simple, fast and user friendly interface.
-For private use only.</description>
+For private use only.
+    </description>
     <summary>Glary Utilities (Free)</summary>
-    <!-- TODO: use variable $version in url if possible in choco/nuget -->
     <releaseNotes>https://www.glarysoft.com/update/release-notes/gu/5.147.0.173</releaseNotes>
     <docsUrl>http://feedback.glarysoft.com/knowledgebase</docsUrl>
     <bugTrackerUrl>http://feedback.glarysoft.com/forums/203980-general-feedback</bugTrackerUrl>

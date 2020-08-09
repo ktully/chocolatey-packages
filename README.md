@@ -5,8 +5,6 @@
 [![](https://ci.appveyor.com/api/projects/status/github/ktully/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages)
 [Update status](https://gist.github.com/ktully/YOUR_GIST_ID)
 
-<!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
-
 ## Chocolatey Packages Template
 
 This contains Chocolatey packages, both manually and automatically maintained.
