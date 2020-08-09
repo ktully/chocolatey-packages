@@ -45,13 +45,14 @@ function global:au_GetLatest {
     $url = $updateIni["Version"]["UpdateUrl"]
     $version = $updateIni["Version"]["Version"]
 
-    $Latest = @{ URL32 = $url; Version = $version }
+    $Latest = @{ URL = $url; Version = $version }
     return $Latest
 }
 
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
+            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'" # currently a static http path, but choco upgrades to https
             "(^[$]checksum\s*=\s*)('.*')"  = "`$1'$($Latest.Checksum32)'"
         }
 
@@ -61,4 +62,4 @@ function global:au_SearchReplace {
     }
 }
 
-update -NoCheckUrl -ChecksumFor 32
+update -ChecksumFor 32

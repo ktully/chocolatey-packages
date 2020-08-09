@@ -2,7 +2,7 @@
 
 $packageName= 'glaryutilities-free' # arbitrary name for the package, used in messages
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url         = 'https://download.glarysoft.com/gu5setup.exe'
+$url         = 'http://download.glarysoft.com/gu5setup.exe'
 $checksum    = '9030e39af12672b49c367d58742e870bfeb4a1256bbc94ab89d31d0646bed3e4'
 
 $packageArgs = @{
