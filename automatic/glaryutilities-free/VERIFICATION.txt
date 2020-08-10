@@ -1,0 +1,32 @@
+
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Glarysoft sign their installer executables with their Authenticode certificate.
+
+To assure you that the package creator has not tampered with the installer, confirm that the output of
+    Get-AuthenticodeSignature .\tools\gu5setup.exe | Format-List
+includes the following
+    SignerCertificate      :
+        [Subject]
+        CN=Glarysoft LTD, O=Glarysoft LTD, S=Beijing, C=CN
+
+        [Issuer]
+        CN=DigiCert Assured ID Code Signing CA-1, OU=www.digicert.com, O=DigiCert Inc, C=US
+and also
+    Status                 : Valid
+
+
+The latest Glarysoft installer at time of packaging is
+    url             =   https://download.glarysoft.com/gu5setup.exe
+    version         =   5.148.0.174
+    checksum        =   2EE713935593B15A2BA0B01BE96DC549EC431E068890133AB3E2A8A06C4EE30E
+    checksumType    =   sha256
+
+Glarysoft do not currently provide a way of downloading old installers,
+so the hash of this URL's contents will change if and when a new installer version is released.
+
+However, even if the hash is different on later installers, you can confirm that
+the SignerCertificate on the vendor installer matches that on the executable embedded in this package.
+

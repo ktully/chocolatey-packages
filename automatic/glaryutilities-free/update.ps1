@@ -49,11 +49,11 @@ function global:au_GetLatest {
     return $Latest
 
     # TODO: download $exe into tools\
+    # TODO: download EULA from https://www.glarysoft.com/inf/eula/?src=10000&id=1&v=5.148.0.174 with updated version
     # $url         = 'http://download.glarysoft.com/gu5setup.exe'
     # TODO: remove all tools\.ignore files
     # TODO: touch tools\${exe}.ignore
-
-
+    # TODO: consider removing README.md from package
 }
 
 function global:au_SearchReplace {
@@ -63,6 +63,14 @@ function global:au_SearchReplace {
             # "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
             #"(^[$]checksum\s*=\s*)('.*')"  = "`$1'$($Latest.Checksum32)'"
         }
+
+        # TODO: update versioned URL in LICENSE.txt
+        # is there a standard AU recipeto update packages with embedded exes?
+
+        # TODO: update checksum in VERIFICATION.txt
+        # TODO: update version in VERIFICATION.txt
+        # TODO: update URL in VERIFICATION.txt
+        # TODO: update signing instructions in VERIFICATION.txt
 
         "$($Latest.PackageName).nuspec" = @{
             "(/release-notes/gu/)(.*)(</releaseNotes>)" = "`${1}$($Latest.Version)`$3"
