@@ -47,13 +47,21 @@ function global:au_GetLatest {
 
     $Latest = @{ URL = $url; Version = $version }
     return $Latest
+
+    # TODO: download $exe into tools\
+    # $url         = 'http://download.glarysoft.com/gu5setup.exe'
+    # TODO: remove all tools\.ignore files
+    # TODO: touch tools\${exe}.ignore
+
+
 }
 
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'" # currently a static http path, but choco upgrades to https
-            "(^[$]checksum\s*=\s*)('.*')"  = "`$1'$($Latest.Checksum32)'"
+            # TODO: Update $exe path just in case it ever changes
+            # "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
+            #"(^[$]checksum\s*=\s*)('.*')"  = "`$1'$($Latest.Checksum32)'"
         }
 
         "$($Latest.PackageName).nuspec" = @{

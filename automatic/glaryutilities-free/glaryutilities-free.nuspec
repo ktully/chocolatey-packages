@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>glaryutilities-free</id>
-    <version>5.147.0.173</version>
+    <version>5.148.0.174</version>
     <title>Glary Utilities (Free)</title>
     <authors>Glarysoft Ltd</authors>
     <projectUrl>https://www.glarysoft.com/glary-utilities/</projectUrl>
@@ -29,7 +29,7 @@ Key features:
 For private use only.
 ]]></description>
     <summary>Glary Utilities (Free)</summary>
-    <releaseNotes>https://www.glarysoft.com/update/release-notes/gu/5.147.0.173</releaseNotes>
+    <releaseNotes>https://www.glarysoft.com/update/release-notes/gu/5.148.0.174</releaseNotes>
     <docsUrl>http://feedback.glarysoft.com/knowledgebase</docsUrl>
     <bugTrackerUrl>http://feedback.glarysoft.com/forums/203980-general-feedback</bugTrackerUrl>
     <copyright>Glarysoft Ltd</copyright>

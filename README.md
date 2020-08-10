@@ -1,21 +1,22 @@
 # Chocolatey Packages
 
-<!-- EDIT ME-->
-
-[![](https://ci.appveyor.com/api/projects/status/github/ktully/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages)
-[Update status](https://gist.github.com/ktully/YOUR_GIST_ID)
+[![Appveyor Build](https://ci.appveyor.com/api/projects/status/github/ktully/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/ktully/chocolatey-packages)
+[![](http://transparent-favicon.info/favicon.ico)](#)
+[![Update status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/ktully/268505ef03d6759e3b0ea06de9d0105f)
+[![](http://transparent-favicon.info/favicon.ico)](#)
+[![chocolatey/ktully](https://img.shields.io/badge/Chocolatey-ktully-yellowgreen.svg)](https://chocolatey.org/profiles/ktully)
 
 ## Chocolatey Packages Template
 
-This contains Chocolatey packages, both manually and automatically maintained.
+<!-- If you have any issues with one of the packages hosted in this repository, please feel free to open an issue (preferred instead of using `Contact Maintainers` on chocolatey.org). -->
 
-You can choose to use one or both of the different methods currently supported in the Chocolatey community for automatic packaging. They are AU (Automatic Updater) and Ketarin/ChocolateyPackageUpdater.
+This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).
+The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
 
 ### Folder Structure
 
-* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using either [AU](https://chocolatey.org/packages/au) or [Ketarin](https://chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://chocolatey.org/packages/chocolateypackageupdater) combo.
+* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using [AU](https://chocolatey.org/packages/au).
 * icons - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
-* ketarin - where ketarin jobs (aka applications or searches) exported as XML are kept. This is done to allow ease of contribution.
 * manual - where packages that are not automatic are kept.
 * ops - scripts, jobs, and other items for ensuring automatic packaging.
 * setup - items for prepping the system to ensure for auto packaging.
@@ -25,13 +26,6 @@ For setting up your own automatic package repository, please see [Automatic Pack
 ### Requirements
 
 * Chocolatey (choco.exe)
-
-#### Ketarin / ChocolateyPackageUpdater
-
-* PowerShell v2+
-* [Ketarin](https://chocolatey.org/packages/ketarin)
-* [Chocolatey Package Updater](https://chocolatey.org/packages/chocolateypackageupdater)
-* A Windows box somewhere - to run the updater on - appveyor can't work until the import of the settings can be automated
 
 #### AU
 
