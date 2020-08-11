@@ -74,6 +74,7 @@ function global:au_SearchReplace {
 
         "$($Latest.PackageName).nuspec" = @{
             "(/release-notes/gu/)(.*)(</releaseNotes>)" = "`${1}$($Latest.Version)`$3"
+            # TODO: update version in license URL
         }
     }
 }

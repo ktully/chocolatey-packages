@@ -28,5 +28,5 @@ Glarysoft do not currently provide a way of downloading old installers,
 so the hash of this URL's contents will change if and when a new installer version is released.
 
 However, even if the hash is different on later installers, you can confirm that
-the SignerCertificate on the vendor installer matches that on the executable embedded in this package.
+the SignerCertificate details on the vendor installer match those on the executable embedded in this package.
 
