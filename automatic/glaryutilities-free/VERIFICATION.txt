@@ -20,8 +20,8 @@ and also
 
 The latest Glarysoft installer at time of packaging is
     url             =   https://download.glarysoft.com/gu5setup.exe
-    version         =   5.148.0.174
-    checksum        =   2EE713935593B15A2BA0B01BE96DC549EC431E068890133AB3E2A8A06C4EE30E
+    version         =   5.163.0.189
+    checksum        =   569284EBF433E6B8AE9513C9C5DCA2881003B58571748142FA55402FC1EAB100
     checksumType    =   sha256
 
 Glarysoft do not currently provide a way of downloading old installers,
