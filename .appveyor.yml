@@ -19,7 +19,7 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: ShawnTheShadow/chocolatey-packages
   github_api_key:
     secure: zuV4G9G202kOHU97sjOXPtGQEb47vq7ARV6Owt0L7cCPhrg4nXTsMEReeja7uQa3 #https://ci.appveyor.com/tools/encrypt
 
