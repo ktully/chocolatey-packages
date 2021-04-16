@@ -1,6 +1,6 @@
 # Chocolatey Packages
 
-[![Appveyor Build](https://ci.appveyor.com/api/projects/status/github/ktully/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/ktully/chocolatey-packages)
+[![Appveyor Build](https://ci.appveyor.com/api/projects/status/github/shawntheshadow/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/shawntheshadow/chocolatey-packages)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [![Update status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/ktully/268505ef03d6759e3b0ea06de9d0105f)
 [![](http://transparent-favicon.info/favicon.ico)](#)
